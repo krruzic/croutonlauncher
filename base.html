@@ -1,0 +1,11 @@
+<head>
+    <script src='list.min.js'></script>
+    <link rel='stylesheet' type='text/css' href='style.css'>
+    <script language='javascript' type='text/javascript'>\n function closeWindow() { window.open('','_parent',''); window.close(); }</script>
+    <script language='javascript' type='text/javascript'>function startList() {var options = {valueNames: [ 'name']};var userList = new List('users', options);}</script>
+</head>
+<body onload='startList()'>
+    <div id='users'>
+        <input class='search' placeholder='Search' />
+        <button class='sort' data-sort='name'>Sort by name</button>
+        <ul class='list'>
